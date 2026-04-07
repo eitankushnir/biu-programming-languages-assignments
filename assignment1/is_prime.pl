@@ -16,4 +16,4 @@ has_divisor(N, P) :-
 has_divisor(N, P) :- 
     P * P < N, 
     NP is P + 2, 
-    is_divisor(N, NP).
+    has_divisor(N, NP).
